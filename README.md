@@ -19,7 +19,7 @@ For some reasons, the **version-1 is implemented without help of any frameworks 
 - scikit-learn 
 - scipy
 
-**To achieve more convinience and efficiency, we will reimplement DFKM by certain deep learning framework(tensorflow/caffe/pytorch). Due to the schedule of research, the code will be implemented before Mar, 2020. **
+**To achieve more convinience and efficiency, we will reimplement DFKM by certain deep learning framework(tensorflow/caffe/pytorch). Due to the schedule of research, the code will be implemented before Mar, 2020.**
 
 ## Brief Introduction
 

@@ -1,8 +1,9 @@
 ## Corresponding Paper
 
-This project correspond to the paper
+This project corresponds to the paper
 
-Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy System* .
+
+Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy Systems*, DOI:10.1109/TFUZZ.2019.2945232.
 
 which has been accepted in Sep, 2019. 
 
@@ -10,14 +11,18 @@ which has been accepted in Sep, 2019.
 
 Hongyuan Zhang
 
-## Dependence
+## Dependency
+
 
 Now, codes of DFKM implemented by pytorch is available: 
+
+For some reasons, the **version-1 is implemented without help of any frameworks like 
 
 - pytorch-1.3.1
 - numpy
 - scikit-learn 
 - scipy
+
 
 ## Brief Introduction
 
@@ -64,6 +69,7 @@ To verify the derivations in our paper, we implement the code of DFKM only by nu
 
 ## Thanks
 
-Thanks to Xi Peng, Jiashi Feng, Shijie Xiao, Wei-Yun Yau,  Joey Tianyi Zhou, and Songfan Yang, "Structured AutoEncoders for Subspace Clustering", *IEEE Transactions on Image Processing*, vol. 27, no. 10, pp.5076-5086, 2018.
+Thanks to 
+Xi Peng, Jiashi Feng, Shijie Xiao, Wei-Yun Yau,  Joey Tianyi Zhou, and Songfan Yang, "Structured AutoEncoders for Subspace Clustering", *IEEE Transactions on Image Processing*, vol. 27, no. 10, pp.5076-5086, 2018.
 
-The codes they provided are used in our project. 
+The codes they provide are used in our project. 

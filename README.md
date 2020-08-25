@@ -9,7 +9,7 @@ which has been accepted in Sep, 2019.
 
 ## Author of Code
 
-Hongyuan Zhang
+Hongyuan Zhang and Rui Zhang
 
 ## Dependency
 
@@ -43,7 +43,7 @@ for lam in [10**-3, 10**-2, 10**-1, 1]:
 	dfkm.run()
 ```
 
-In fact, the data_loader.py is not necessary. You just need to input a numpy-matrix ($n\times d$) into DeepFuzzyKMeans. If you have any question, please email *hyzhang98@gmail.com*.
+In fact, the data_loader.py is not necessary. You just need to input a numpy-matrix ($n\times d$) into DeepFuzzyKMeans. If you have any question, please email *hyzhang98@gmail.com* or *ruizhang8633@gmail.com*.
 
 ### Directory v0
 

@@ -2,40 +2,63 @@
 
 This project correspond to the paper
 
-Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy System* 
+Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy System* .
 
-which has been accept in Sep, 2019. 
+which has been accepted in Sep, 2019. 
 
 ## Author of Code
 
-Hongyuan Zhang and Rui Zhang
+Hongyuan Zhang
 
 ## Dependence
 
-For some reasons, the **version-1 is implemented without help of any frameworks like caffe, tensorflow and so on**. The only third-party packages you need is several well-known ones, including: 
+Now, codes of DFKM implemented by pytorch is available: 
 
+- pytorch-1.3.1
 - numpy
-- pickle
 - scikit-learn 
 - scipy
 
-**To achieve more convinience and efficiency, we will reimplement DFKM by certain deep learning framework(tensorflow/caffe/pytorch). Due to the schedule of research, the code will be implemented before Mar, 2020. **
-
 ## Brief Introduction
 
-- fuzzy_k_means.py: the main source code of DFKM.
-- image_seg.py: code to perform image segmentation. 
+- DFKM.py: the main source code of DFKM.
+- data_loader.py: load data from matlab files (*.mat). 
 - utils.py: functions used in experiemnts.
-- kernel_k_means.py/RobustFKM.py/fuzzy_k_means.py: codes of competitors which are implemented by ourselves. 
-- usages: MATLAB codes that used in our experiments.
+- metric.py: codes for evaluation of clustering results. 
 
-You can test the code by the following command
+Samples to run the code is given as follows
 
-```shell
-python jaffe_test.py
+```python
+import data_loader as loader
+data, labels = loader.load_data(loader.USPS)
+data = data.T
+for lam in [10**-3, 10**-2, 10**-1, 1]:
+	print('lam={}'.format(lam))
+	dfkm = DeepFuzzyKMeans(data, labels, [data.shape[0], 512, 300], lam=lam, gamma=1, batch_size=512, lr=10**-4)
+	dfkm.run()
 ```
 
-and you can imitate it to run DFKM on other datasets. 
+In fact, the data_loader.py is not necessary. You just need to input a numpy-matrix ($n\times d$) into DeepFuzzyKMeans. If you have any question, please email *hyzhang98@gmail.com*.
+
+### Directory v0
+
+To verify the derivations in our paper, we implement the code of DFKM only by numpy, and the related codes are put into *v0(without dl-framework)*. However, the codes are not clear enough, and they are hard to maintain and update. **So we now rewrite the core codes of DFKM.**
+
+
+
+## Citations
+
+```
+@ARTICLE{DFKM,
+  author={R. {Zhang} and X. {Li} and H. {Zhang} and F. {Nie}},
+  journal={IEEE Transactions on Fuzzy Systems}, 
+  title={Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-1},
+}
+```
 
 
 

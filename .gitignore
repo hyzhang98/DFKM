@@ -5,9 +5,7 @@ venv/
 *.params
 *-ubyte
 test.py
-*.mat
 temp*
-data/
 params/
 results/
 *.bmp

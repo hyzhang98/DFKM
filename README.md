@@ -43,7 +43,7 @@ for lam in [10**-3, 10**-2, 10**-1, 1]:
 	dfkm.run()
 ```
 
-In fact, the data_loader.py is not necessary. You just need to input a numpy-matrix ($n\times d$) into DeepFuzzyKMeans. If you have any question, please email *hyzhang98@gmail.com* or *ruizhang8633@gmail.com*.
+In fact, the data_loader.py is not necessary. You just need to input a numpy-matrix (n * d) into DeepFuzzyKMeans. If you have any question, please email *hyzhang98@gmail.com*.
 
 ### Directory v0
 
@@ -58,10 +58,10 @@ To verify the derivations in our paper, we implement the code of DFKM only by nu
   author={R. {Zhang} and X. {Li} and H. {Zhang} and F. {Nie}},
   journal={IEEE Transactions on Fuzzy Systems}, 
   title={Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization}, 
-  year={2019},
-  volume={},
-  number={},
-  pages={1-1},
+  year={2020},
+  volume={28},
+  number={11},
+  pages={2814-2824},
 }
 ```
 

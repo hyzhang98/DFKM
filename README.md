@@ -9,14 +9,17 @@ which has been accepted in Sep, 2019.
 
 ## Author of Code
 
-Hongyuan Zhang and Rui Zhang
+Hongyuan Zhang
+
+If you have issues, please email:
+
+hyzhang98@gmail.com or hyzhang98@mail.nwpu.edu.cn}
 
 ## Dependency
 
 
 Now, codes of DFKM implemented by pytorch is available: 
 
-For some reasons, the **version-1 is implemented without help of any frameworks like 
 
 - pytorch-1.3.1
 - numpy

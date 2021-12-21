@@ -3,9 +3,8 @@
 This project corresponds to the paper
 
 
-Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy Systems*, DOI:10.1109/TFUZZ.2019.2945232.
+[Rui Zhang, Xuelong Li, Hongyuan Zhang, and Feiping Nie, "**Deep Fuzzy K-Means with Adaptive Loss and Entropy Regularization**," *IEEE Transactions on Fuzzy Systems*, vol. 28, no. 11, pp. 2814-2824, 2020](https://ieeexplore.ieee.org/document/8859232/).
 
-which has been accepted in Sep, 2019. 
 
 ## Author of Code
 
@@ -13,7 +12,7 @@ Hongyuan Zhang
 
 If you have issues, please email:
 
-hyzhang98@gmail.com or hyzhang98@mail.nwpu.edu.cn}
+hyzhang98@gmail.com or hyzhang98@mail.nwpu.edu.cn
 
 ## Dependency
 
